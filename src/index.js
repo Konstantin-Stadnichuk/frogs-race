@@ -16,10 +16,10 @@ module.exports = function getBestRacer(distance) {
 	
 	// helper functions
 	
-  function racerFinished(distance, racerIndex, racerArrayIndex) {
-    // if undefined -> true (finished)
-    // if number -> false (not finished)
-    return !distance[racerIndex][racerArrayIndex];
+	function racerFinished(distance, racerIndex, racerArrayIndex) {
+		// if undefined -> true (finished)
+		// if number -> false (not finished)
+		return !distance[racerIndex][racerArrayIndex];
 	}
 
 	function jump(racerDistance, racerArrayMapIndex) {
