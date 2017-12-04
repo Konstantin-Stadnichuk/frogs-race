@@ -16,12 +16,10 @@ module.exports = function getBestRacer(distance) {
 	
 	// helper functions
 	
-	function racerFinished(distance, racerIndex, racerArrayIndex) {
-		// if undefined then we are out of the array
-		if (!distance[racerIndex][racerArrayIndex]) return true;
-
-		// if there is a number is the array then we are still withon the array
-		return false;
+  function racerFinished(distance, racerIndex, racerArrayIndex) {
+    // if undefined -> true (finished)
+    // if number -> false (not finished)
+    return !distance[racerIndex][racerArrayIndex];
 	}
 
 	function jump(racerDistance, racerArrayMapIndex) {
